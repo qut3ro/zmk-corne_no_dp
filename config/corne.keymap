@@ -5,14 +5,9 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {};
-
     combos {
         compatible = "zmk,combos";
 
@@ -33,40 +28,40 @@
         letters {
             display-name = "Let";
             bindings = <
-&kp ESC      &kp Q  &kp W  &kp E     &kp R        &kp T           &kp Y        &kp U  &kp I      &kp O    &kp O          &kp BSPC
-&kp TAB      &kp A  &kp S  &kp D     &kp F        &kp G           &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&bootloader  &kp Z  &kp X  &kp C     &kp V        &kp B           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH      &bootloader
-                           &kp LGUI  &lt 1 SPACE  &kp LEFT_SHIFT  &lt 3 ENTER  &mo 2  &kp RALT
+&kp ESC      &kp Q  &kp W  &kp E     &kp R        &kp T             &kp Y        &kp U            &kp I      &kp O    &kp P          &kp DELETE
+&kp TAB      &kp A  &kp S  &kp D     &kp F        &kp G             &kp H        &kp J            &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&bootloader  &kp Z  &kp X  &kp C     &kp V        &kp B             &kp N        &kp M            &kp COMMA  &kp DOT  &kp SLASH      &bootloader
+                           &kp LGUI  &lt 1 SPACE  &kp LEFT_SHIFT    &lt 3 ENTER  &lt 2 BACKSPACE  &kp RALT
             >;
         };
 
         numbers {
             display-name = "Num";
             bindings = <
-&trans  &kp C_BRI_UP  &kp C_BRI_DN  &kp C_VOL_DN  &kp C_VOL_UP  &kp ESCAPE    &kp LG(SPACE)  &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp LC(SPACE)  &kp BSPC
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp N7                &kp NUMBER_8  &kp NUMBER_9           &kp NUMBER_0   &kp PG_UP
-&trans  &kp HASH      &kp PLUS      &kp GRAVE     &kp MINUS     &kp PLUS      &kp PERIOD     &kp COMMA             &kp COMMA     &kp PERIOD             &kp END        &kp PG_DN
-                                    &trans        &trans        &trans        &trans         &trans                &trans
+&trans  &kp C_BRI_UP  &kp C_BRI_DN  &kp C_VOL_DN  &kp C_VOL_UP  &kp ESCAPE      &kp LG(SPACE)  &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp LC(SPACE)  &kp BSPC
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp N7                &kp NUMBER_8  &kp NUMBER_9           &kp NUMBER_0   &none
+&trans  &kp HASH      &kp PLUS      &kp GRAVE     &kp MINUS     &kp PLUS        &none          &none                 &kp COMMA     &kp PERIOD             &kp END        &none
+                                    &trans        &trans        &trans          &trans         &trans                &trans
             >;
         };
 
         symbols {
             display-name = "Sym";
             bindings = <
-&trans  &kp RIGHT_BRACE  &kp LESS_THAN      &kp LEFT_BRACE  &kp PIPE          &kp PRCNT  &kp CARET    &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp BSPC
-&trans  &kp EXCLAMATION  &kp GREATER_THAN   &kp COLON       &kp ASTERISK      &kp SQT    &kp AT_SIGN  &kp LCMD              &kp LEFT_ALT  &kp LEFT_SHIFT         &kp LCTRL       &kp GRAVE
-&trans  &kp AMPERSAND    &kp RIGHT_BRACKET  &kp SEMICOLON   &kp LEFT_BRACKET  &kp HASH   &kp UNDER    &kp PERIOD            &kp COMMA     &kp TILDE              &kp QUESTION    &kp TILDE
-                                            &trans          &trans            &kp SPACE  &kp RET      &trans                &trans
+&trans  &kp RIGHT_BRACE  &kp GREATER_THAN   &kp LEFT_BRACE  &kp PIPE          &kp PRCNT    &kp CARET    &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp BSPC
+&trans  &kp EXCLAMATION  &kp LESS_THAN      &kp COLON       &kp ASTERISK      &kp SQT      &kp AT_SIGN  &kp LCMD              &kp LEFT_ALT  &kp LEFT_SHIFT         &kp LCTRL       &kp GRAVE
+&trans  &kp AMPERSAND    &kp RIGHT_BRACKET  &kp SEMICOLON   &kp LEFT_BRACKET  &kp HASH     &none        &kp UNDER             &kp COMMA     &kp DOT                &kp QUESTION    &kp TILDE
+                                            &trans          &trans            &trans       &trans       &trans                &trans
             >;
         };
 
         functions {
             display-name = "Fun";
             bindings = <
-&kp F1  &kp F2      &kp F3     &kp F4       &kp F5     &kp F6         &kp F7              &kp F8               &kp F9          &kp F10          &kp F11    &kp F12
-&trans  &kp LG(Z)   &kp LG(X)  &kp LG(C)    &kp LG(V)  &kp PG_UP      &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &mkp LCLK        &mkp RCLK  &kp PAUSE_BREAK
-&trans  &sys_reset  &trans     &bootloader  &trans     &kp PAGE_DOWN  &trans              &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &kp C_NEXT
-                               &trans       &trans     &trans         &trans              &trans               &trans
+&kp F1       &kp F2     &kp F3     &kp F4     &kp F5     &kp F6           &kp F7              &kp F8               &kp F9          &kp F10          &kp F11  &kp F12
+&none        &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp PG_UP        &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &none            &none    &none
+&bootloader  &none      &none      &none      &trans     &kp PAGE_DOWN    &none               &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &bootloader
+                                   &trans     &trans     &trans           &trans              &trans               &trans
             >;
         };
     };
