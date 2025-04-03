@@ -1,7 +1,7 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne, layout_name: default_transform}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - BT CLR ALL
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-control$$
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - OUT BLE
   - A
   - S
   - D
@@ -24,19 +24,19 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - '&td0'
+  - $$mdi:bluetooth-off$$
+  - $$mdi:progress-download$$
   - Z
   - X
   - C
   - V
-  - B
+  - RGB ON
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - $$mdi:progress-download$$
   - LGUI
   - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: Fn}
