@@ -11,84 +11,62 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    chosen {
-        zmk,matrix_transform = &default_transform;
+    behaviors {};
 
-        // zmk,matrix_transform = &five_column_transform;
-    };
-};
+    combos {
+        compatible = "zmk,combos";
 
-/ {
-    behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD0";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 16 17>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <23 24 25>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "QWERTY";
-
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   | 
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+        letters {
+            display-name = "Let";
             bindings = <
-&bt BT_CLR_ALL  &kp Q  &kp W  &kp E     &kp R  &kp T             &kp Y        &kp U  &kp I      &kp O    &kp P     &bt BT_SEL 0
-&out OUT_BLE    &kp A  &kp S  &kp D     &kp F  &kp G             &kp H        &kp J  &kp K      &kp L    &kp SEMI  &bt BT_CLR
-&bootloader     &kp Z  &kp X  &kp C     &kp V  &rgb_ug RGB_ON    &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &bootloader
-                              &kp LGUI  &mo 1  &lt 3 SPACE       &lt 3 ENTER  &mo 2  &kp RALT
+&kp ESC      &kp Q  &kp W  &kp E     &kp R        &kp T           &kp Y        &kp U  &kp I      &kp O    &kp O          &kp BSPC
+&kp TAB      &kp A  &kp S  &kp D     &kp F        &kp G           &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&bootloader  &kp Z  &kp X  &kp C     &kp V        &kp B           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH      &bootloader
+                           &kp LGUI  &lt 1 SPACE  &kp LEFT_SHIFT  &lt 3 ENTER  &mo 2  &kp RALT
             >;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+        numbers {
+            display-name = "Num";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5             &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans             &kp INS          &kp DEL          &trans
+&trans  &kp C_BRI_UP  &kp C_BRI_DN  &kp C_VOL_DN  &kp C_VOL_UP  &kp ESCAPE    &kp LG(SPACE)  &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp LC(SPACE)  &kp BSPC
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp N7                &kp NUMBER_8  &kp NUMBER_9           &kp NUMBER_0   &kp PG_UP
+&trans  &kp HASH      &kp PLUS      &kp GRAVE     &kp MINUS     &kp PLUS      &kp PERIOD     &kp COMMA             &kp COMMA     &kp PERIOD             &kp END        &kp PG_DN
+                                    &trans        &trans        &trans        &trans         &trans                &trans
             >;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+        symbols {
+            display-name = "Sym";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &none         &none         &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans    &trans    &kp SPACE    &kp RET    &trans     &trans
+&trans  &kp RIGHT_BRACE  &kp LESS_THAN      &kp LEFT_BRACE  &kp PIPE          &kp PRCNT  &kp CARET    &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp BSPC
+&trans  &kp EXCLAMATION  &kp GREATER_THAN   &kp COLON       &kp ASTERISK      &kp SQT    &kp AT_SIGN  &kp LCMD              &kp LEFT_ALT  &kp LEFT_SHIFT         &kp LCTRL       &kp GRAVE
+&trans  &kp AMPERSAND    &kp RIGHT_BRACKET  &kp SEMICOLON   &kp LEFT_BRACKET  &kp HASH   &kp UNDER    &kp PERIOD            &kp COMMA     &kp TILDE              &kp QUESTION    &kp TILDE
+                                            &trans          &trans            &kp SPACE  &kp RET      &trans                &trans
             >;
         };
 
-        layer_3 {
-            display-name = "Fn";
+        functions {
+            display-name = "Fun";
             bindings = <
-&trans  &kp F1      &kp F2  &kp F3  &kp F4      &kp F5         &kp F6       &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &bt BT_CLR  &trans  &trans  &sys_reset  &bootloader    &bootloader  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
-&trans  &trans      &trans  &trans  &trans      &trans         &trans       &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                            &trans  &trans      &trans         &trans       &trans  &trans
+&kp F1  &kp F2      &kp F3     &kp F4       &kp F5     &kp F6         &kp F7              &kp F8               &kp F9          &kp F10          &kp F11    &kp F12
+&trans  &kp LG(Z)   &kp LG(X)  &kp LG(C)    &kp LG(V)  &kp PG_UP      &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &mkp LCLK        &mkp RCLK  &kp PAUSE_BREAK
+&trans  &sys_reset  &trans     &bootloader  &trans     &kp PAGE_DOWN  &trans              &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &kp C_NEXT
+                               &trans       &trans     &trans         &trans              &trans               &trans
             >;
         };
     };
