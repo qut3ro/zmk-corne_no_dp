@@ -55,7 +55,7 @@ layers:
   - {t: '=', s: +}
   - )
   - Ctl+$$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
   - '2'
@@ -98,7 +98,7 @@ layers:
   - {t: '=', s: +}
   - )
   - _
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '~'
   - '!'
   - <
