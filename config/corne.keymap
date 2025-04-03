@@ -13,12 +13,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <15 16 17>;
+            key-positions = <15 16 14>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <23 24 25>;
+            key-positions = <19 20 21>;
         };
     };
 
@@ -38,20 +38,20 @@
         numbers {
             display-name = "Num";
             bindings = <
-&trans  &kp C_BRI_UP  &kp C_BRI_DN  &kp C_VOL_DN  &kp C_VOL_UP  &kp ESCAPE      &kp LG(SPACE)  &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp LC(SPACE)  &kp BSPC
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp N7                &kp NUMBER_8  &kp NUMBER_9           &kp NUMBER_0   &none
-&trans  &kp HASH      &kp PLUS      &kp GRAVE     &kp MINUS     &kp PLUS        &none          &none                 &kp COMMA     &kp PERIOD             &kp END        &none
-                                    &trans        &trans        &trans          &trans         &trans                &trans
+&none  &kp C_BRI_UP  &kp C_BRI_DN  &kp C_VOL_DN  &kp C_VOL_UP  &kp ESCAPE      &kp LG(SPACE)  &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp LC(SPACE)  &kp BSPC
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp N7                &kp NUMBER_8  &kp NUMBER_9           &kp NUMBER_0   &none
+&none  &kp HASH      &kp PLUS      &kp GRAVE     &kp MINUS     &kp PLUS        &none          &none                 &kp COMMA     &kp PERIOD             &kp END        &none
+                                   &trans        &trans        &trans          &trans         &trans                &trans
             >;
         };
 
         symbols {
             display-name = "Sym";
             bindings = <
-&trans  &kp RIGHT_BRACE  &kp GREATER_THAN   &kp LEFT_BRACE  &kp PIPE          &kp PRCNT    &kp CARET    &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp BSPC
-&trans  &kp EXCLAMATION  &kp LESS_THAN      &kp COLON       &kp ASTERISK      &kp SQT      &kp AT_SIGN  &kp LCMD              &kp LEFT_ALT  &kp LEFT_SHIFT         &kp LCTRL       &kp GRAVE
-&trans  &kp AMPERSAND    &kp RIGHT_BRACKET  &kp SEMICOLON   &kp LEFT_BRACKET  &kp HASH     &none        &kp UNDER             &kp COMMA     &kp DOT                &kp QUESTION    &kp TILDE
-                                            &trans          &trans            &trans       &trans       &trans                &trans
+&none      &kp RIGHT_BRACE  &kp GREATER_THAN   &kp LEFT_BRACE  &kp PIPE          &kp PRCNT    &kp CARET    &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp BSPC
+&kp TILDE  &kp EXCLAMATION  &kp LESS_THAN      &kp COLON       &kp ASTERISK      &kp SQT      &kp AT_SIGN  &kp LCMD              &kp LEFT_ALT  &kp LEFT_SHIFT         &kp LCTRL       &kp GRAVE
+&none      &kp AMPERSAND    &kp RIGHT_BRACKET  &kp SEMICOLON   &kp LEFT_BRACKET  &kp HASH     &none        &kp UNDER             &kp COMMA     &kp DOT                &kp QUESTION    &none
+                                               &trans          &trans            &trans       &trans       &trans                &trans
             >;
         };
 
