@@ -25,7 +25,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:progress-download$$
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -38,9 +38,9 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:progress-download$$
   - LGUI
-  - {t: '$$mdi:keyboard-space$$', h: Num}
+  - {t: '$$mdi:keyboard-return$$', h: Num}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-return$$', h: Fun}
+  - {t: '$$mdi:keyboard-space$$', h: Fun}
   - {t: '$$mdi:backspace$$', h: Sym, s: 'Alt+$$mdi:backspace$$'}
   - $$mdi:apple-keyboard-option$$
   Num:
@@ -55,7 +55,7 @@ layers:
   - {t: '=', s: +}
   - )
   - Ctl+$$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PG UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
   - '2'
@@ -67,19 +67,19 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PG DN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '#'
   - +
   - {t: '`', s: '~'}
   - {t: '-', s: _}
-  - +
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ',', s: <}
   - .
-  - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
