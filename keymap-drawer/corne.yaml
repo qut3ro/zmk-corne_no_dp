@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - $$mdi:apple-keyboard-shift$$
@@ -44,19 +44,19 @@ layers:
   - {t: '$$mdi:backspace$$', h: Sym, s: 'Alt+$$mdi:backspace$$'}
   - $$mdi:apple-keyboard-option$$
   Num:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+Alt+U
+  - Ctl+Alt+I
+  - Alt+Ctl+$$mdi:arrow-left-bold$$
+  - Ctl+Alt+$$mdi:arrow-right-bold$$
+  - {t: 'Ctl+Alt+$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-esc$$
   - Gui+$$mdi:keyboard-space$$
   - (
   - {t: '=', s: +}
   - )
   - Ctl+$$mdi:keyboard-space$$
-  - PG UP
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgUp
+  - Ctl+Alt+Gui+$$mdi:arrow-left-bold$$
   - '1'
   - '2'
   - '3'
@@ -67,15 +67,15 @@ layers:
   - '8'
   - '9'
   - '0'
-  - PG DN
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgDn
+  - Gui+Ctl+Alt+$$mdi:arrow-right-bold$$
   - '#'
-  - +
-  - {t: '`', s: '~'}
+  - $
   - {t: '-', s: _}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - +
+  - '*'
+  - '{'
+  - '}'
   - {t: ',', s: <}
   - .
   - {t: '$$mdi:minus-circle-outline$$', type: none}
