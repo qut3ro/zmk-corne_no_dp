@@ -45,10 +45,10 @@ layers:
   - $$mdi:apple-keyboard-option$$
   Num:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:brightness-5$$
-  - $$mdi:brightness-7$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-esc$$
   - Gui+$$mdi:keyboard-space$$
   - (
@@ -130,18 +130,18 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fun:
-  - F1
-  - F2
+  - {t: '$$mdi:brightness-7$$', h: F1}
+  - {t: '$$mdi:brightness-5$$', h: F2}
   - F3
   - F4
   - F5
   - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
+  - {t: '$$mdi:skip-previous$$', h: F7}
+  - {t: PLAY PAUSE, h: F8}
+  - {t: '$$mdi:skip-next$$', h: F9}
+  - {t: '$$mdi:volume-off$$', h: F10}
+  - {t: '$$mdi:volume-low$$', h: F11}
+  - {t: '$$mdi:volume-high$$', h: F12}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   - {t: X, h: '$$mdi:apple-keyboard-command$$'}
