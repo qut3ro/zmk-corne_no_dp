@@ -12,7 +12,7 @@
         ht: hold_tap {
             label = "hold_tap_letters";
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_MOD";
             bindings = <&kp>;
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             release-after-ms = <5000>;
             quick-release;
             ignore-modifiers;
