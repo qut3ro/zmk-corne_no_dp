@@ -520,6 +520,13 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="630" y="76" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="635" y="80" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-2">
+<path d="M420,224 l-52,0" class="combo"/>
+<path d="M420,224 l52,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<a href="#bt_light">
+<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 75%">bt_light</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 330)" class="layer-Num">
@@ -754,6 +761,13 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="630" y="76" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="635" y="80" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-2">
+<path d="M420,224 l-52,0" class="combo"/>
+<path d="M420,224 l52,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<a href="#bt_light">
+<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 75%">bt_light</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 661)" class="layer-Sym">
@@ -992,6 +1006,13 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="630" y="76" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="635" y="80" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-2">
+<path d="M420,224 l-52,0" class="combo"/>
+<path d="M420,224 l52,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<a href="#bt_light">
+<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 75%">bt_light</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 991)" class="layer-Fun">
@@ -1240,6 +1261,13 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="630" y="76" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="635" y="80" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-2">
+<path d="M420,224 l-52,0" class="combo"/>
+<path d="M420,224 l52,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<a href="#bt_light">
+<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 75%">bt_light</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 1321)" class="layer-bt_light">
@@ -1457,17 +1485,13 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(349, 224) rotate(30.0)" class="key keypos-38">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-38" width="40" height="68" class="key"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-shift"/>
-<a href="#bt_light">
-<text x="0" y="38" class="key hold layer-activator"><tspan style="font-size: 75%">bt_light</tspan></text>
-</a></g>
-<g transform="translate(491, 224) rotate(-30.0)" class="key trans keypos-39">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-38" width="40" height="68" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(349, 224) rotate(30.0)" class="key held keypos-38">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-38" width="40" height="68" class="key held"/>
+</g>
+<g transform="translate(491, 224) rotate(-30.0)" class="key held keypos-39">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-38" width="40" height="68" class="key held"/>
 </g>
 <g transform="translate(556, 212) rotate(-15.0)" class="key trans keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1491,6 +1515,13 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="630" y="76" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="635" y="80" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-2">
+<path d="M420,224 l-52,0" class="combo"/>
+<path d="M420,224 l52,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<a href="#bt_light">
+<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 75%">bt_light</tspan></text>
+</a></g>
 </g>
 </g>
 </svg>

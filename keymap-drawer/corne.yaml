@@ -211,8 +211,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: bt_light}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
@@ -220,3 +220,5 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [19, 20, 21]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [38, 39]
+  k: bt_light
