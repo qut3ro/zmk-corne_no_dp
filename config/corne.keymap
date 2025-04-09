@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -107,10 +106,10 @@
 
         bt_light {
             bindings = <
-&trans  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_DISC 0  &trans  &trans    &trans  &bl BL_TOG       &bl BL_INC       &bl BL_DEC       &bl BL_SET 20                   &trans
-&trans  &trans          &trans        &trans         &trans  &trans    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans
-&trans  &trans          &trans        &trans         &trans  &trans    &trans  &trans           &trans           &trans           &trans                          &trans
-                                      &trans         &trans  &trans    &trans  &trans           &trans
+&trans  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_DISC 0  &trans  &trans    &trans  &none           &none            &none            &none                           &trans
+&trans  &trans          &trans        &trans         &trans  &trans    &trans  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans
+&trans  &trans          &trans        &trans         &trans  &trans    &trans  &trans          &trans           &trans           &trans                          &trans
+                                      &trans         &trans  &trans    &trans  &trans          &trans
             >;
         };
     };
