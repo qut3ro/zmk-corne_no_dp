@@ -142,7 +142,7 @@ layers:
   - {t: '$$mdi:volume-off$$', h: F10}
   - {t: '$$mdi:volume-low$$', h: F11}
   - {t: '$$mdi:volume-high$$', h: F12}
-  - BT CLR ALL
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   - {t: X, h: '$$mdi:apple-keyboard-command$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
