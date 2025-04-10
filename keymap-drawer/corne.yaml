@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: Fun}
-  - {t: '$$mdi:backspace$$', h: Sym, s: 'Alt+$$mdi:backspace$$'}
+  - {t: '$$mdi:backspace$$', h: Let, s: 'Alt+$$mdi:backspace$$'}
   - $$mdi:apple-keyboard-option$$
   Num:
   - Ctl+Alt+U
@@ -49,12 +49,12 @@ layers:
   - Alt+Ctl+$$mdi:arrow-left-bold$$
   - Ctl+Alt+$$mdi:arrow-right-bold$$
   - {t: 'Ctl+Alt+$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-esc$$
+  - Gui+6
   - Gui+$$mdi:keyboard-space$$
   - (
   - {t: '=', s: +}
   - )
-  - Ctl+$$mdi:keyboard-space$$
+  - _
   - PgUp
   - Ctl+Alt+Gui+$$mdi:arrow-left-bold$$
   - '1'
@@ -69,8 +69,8 @@ layers:
   - '0'
   - PgDn
   - Gui+Ctl+Alt+$$mdi:arrow-right-bold$$
-  - '#'
-  - $
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '-', s: _}
   - +
   - '*'
@@ -86,48 +86,48 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Sym:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  symbols:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - '}'
-  - '>'
+  - {t: <, h: '>'}
   - '{'
-  - '|'
-  - '%'
-  - ^
+  - Gui+6
+  - {t: /, s: '?'}
   - (
-  - {t: '=', s: +}
+  - {t: '=', h: +, s: +}
   - )
   - _
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&'
   - '!'
-  - <
   - ':'
-  - '*'
+  - '"'
   - {t: '''', s: '"'}
   - '@'
-  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '`', s: '~'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&'
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '%'
   - {t: ']', s: '}'}
   - {t: ;, s: ':'}
   - {t: '[', s: '{'}
   - '#'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - _
+  - ^
+  - {t: '-', s: _}
   - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - .
   - '?'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fun:
   - {t: '$$mdi:brightness-7$$', h: F1}
@@ -147,7 +147,7 @@ layers:
   - {t: X, h: '$$mdi:apple-keyboard-command$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - PG UP
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-left-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
   - $$mdi:arrow-up-bold$$
@@ -159,7 +159,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PgDn
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
