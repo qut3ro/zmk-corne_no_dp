@@ -170,7 +170,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - symbols
   - {t: '$$mdi:transfer$$', type: trans}
   bt_light:
   - {t: '$$mdi:transfer$$', type: trans}
