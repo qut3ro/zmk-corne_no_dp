@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', h: Let, s: 'Alt+$$mdi:backspace$$'}
   - $$mdi:keyboard-tab$$
   - A
   - S
@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: Fun}
-  - {t: '$$mdi:backspace$$', h: Let, s: 'Alt+$$mdi:backspace$$'}
+  - {t: '$$mdi:backspace$$', h: symbols}
   - $$mdi:apple-keyboard-option$$
   Num:
   - Ctl+Alt+U
@@ -127,7 +127,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fun:
   - {t: '$$mdi:brightness-7$$', h: F1}
@@ -170,7 +170,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - symbols
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   bt_light:
   - {t: '$$mdi:transfer$$', type: trans}
