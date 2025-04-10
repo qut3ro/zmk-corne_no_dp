@@ -86,10 +86,10 @@
 
         symbols {
             bindings = <
-&trans  &kp GRAVE      &kp RIGHT_BRACE    &ht GREATER_THAN LESS_THAN  &kp LEFT_BRACE     &kp LG(NUMBER_6)    &kp SLASH    &kp LEFT_PARENTHESIS  &ht PLUS EQUAL  &kp RIGHT_PARENTHESIS  &kp UNDER         &trans
-&trans  &kp AMPERSAND  &kp EXCLAMATION    &kp COLON                   &kp DOUBLE_QUOTES  &kp SQT             &kp AT_SIGN  &kp LEFT_COMMAND      &kp LEFT_ALT    &kp LEFT_SHIFT         &kp LEFT_CONTROL  &trans
-&trans  &kp PERCENT    &kp RIGHT_BRACKET  &kp SEMICOLON               &kp LEFT_BRACKET   &kp HASH            &kp CARET    &kp MINUS             &kp COMMA       &kp PERIOD             &kp QUESTION      &trans
-                                          &trans                      &trans             &trans              &trans       &trans                &trans
+&trans  &kp GRAVE      &kp RIGHT_BRACE    &ht GREATER_THAN LESS_THAN  &kp LEFT_BRACE     &kp LG(NUMBER_6)    &kp BACKSLASH  &kp LEFT_PARENTHESIS  &ht PLUS EQUAL  &kp RIGHT_PARENTHESIS  &kp UNDER         &trans
+&trans  &kp AMPERSAND  &kp EXCLAMATION    &kp SEMICOLON               &kp DOUBLE_QUOTES  &kp SQT             &kp AT_SIGN    &kp LEFT_COMMAND      &kp LEFT_ALT    &kp LEFT_SHIFT         &kp LEFT_CONTROL  &trans
+&trans  &kp PERCENT    &kp RIGHT_BRACKET  &kp COLON                   &kp LEFT_BRACKET   &kp HASH            &kp CARET      &kp MINUS             &kp COMMA       &kp PERIOD             &kp QUESTION      &trans
+                                          &trans                      &trans             &trans              &trans         &trans                &trans
             >;
         };
 
