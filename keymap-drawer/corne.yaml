@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', h: Let, s: 'Alt+$$mdi:backspace$$'}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-tab$$
   - A
   - S
@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: Fun}
-  - {t: '$$mdi:backspace$$', h: symbols}
+  - {t: '$$mdi:backspace$$', h: symbols, s: 'Alt+$$mdi:backspace$$'}
   - $$mdi:apple-keyboard-option$$
   Num:
   - Ctl+Alt+U
