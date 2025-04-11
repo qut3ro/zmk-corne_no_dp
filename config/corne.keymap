@@ -79,7 +79,7 @@
             bindings = <
 &kp LC(LA(U))                &kp LC(LA(I))     &kp LA(LC(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LC(LA(ENTER))  &kp LG(NUMBER_6)    &kp LG(SPACE)   &kp LEFT_PARENTHESIS  &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PAGE_UP
 &kp LC(LA(LG(LEFT_ARROW)))   &kp NUMBER_1      &kp NUMBER_2            &kp NUMBER_3             &kp NUMBER_4       &kp NUMBER_5        &kp NUMBER_6    &kp N7                &kp NUMBER_8  &kp NUMBER_9           &kp NUMBER_0    &kp PAGE_DOWN
-&kp LG(LC(LA(RIGHT_ARROW)))  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp MINUS                &kp PLUS           &kp ASTERISK        &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp COMMA     &kp PERIOD             &none           &kp END
+&kp LG(LC(LA(RIGHT_ARROW)))  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp MINUS                &kp PLUS           &kp ASTERISK        &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp COMMA     &kp PERIOD             &kp SLASH       &kp END
                                                                        &trans                   &trans             &trans              &trans          &trans                &trans
             >;
         };
@@ -96,19 +96,19 @@
         functions {
             display-name = "Fun";
             bindings = <
-&ht F1 C_BRI_DN  &ht F2 C_BRI_UP  &kp F3     &kp F4     &kp F5     &kp F6    &ht F7 C_PREV       &ht F8 C_PLAY_PAUSE  &ht F9 C_NEXT   &ht F10 C_MUTE   &ht F11 C_VOL_DN  &ht F12 C_VOL_UP
-&none            &kp LG(Z)        &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &none            &none             &none
-&bootloader      &none            &none      &none      &trans     &trans    &none               &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &none             &bootloader
+&ht F1 C_BRI_DN  &ht F2 C_BRI_UP  &kp F3     &kp F4     &kp F5     &kp F6    &ht F7 C_PREV       &ht F8 C_PLAY_PAUSE  &ht F9 C_NEXT   &ht F10 C_MUTE        &ht F11 C_VOL_DN      &ht F12 C_VOL_UP
+&none            &kp LG(Z)        &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))
+&none            &none            &none      &none      &trans     &trans    &none               &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW       &none                 &none
                                              &trans     &trans     &trans    &trans              &trans               &trans
             >;
         };
 
         bt_light {
             bindings = <
-&trans  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_DISC 0  &trans  &trans    &trans  &none           &none            &none            &none                           &trans
-&trans  &trans          &trans        &trans         &trans  &trans    &trans  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans
-&trans  &trans          &trans        &trans         &trans  &trans    &trans  &trans          &trans           &trans           &trans                          &trans
-                                      &trans         &trans  &trans    &trans  &trans          &trans
+&trans       &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_DISC 0  &trans  &trans    &trans  &none           &none            &none            &none                           &trans
+&trans       &trans          &trans        &trans         &trans  &trans    &trans  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans
+&bootloader  &trans          &trans        &trans         &trans  &trans    &trans  &trans          &trans           &trans           &trans                          &bootloader
+                                           &trans         &trans  &trans    &trans  &trans          &trans
             >;
         };
     };
