@@ -76,9 +76,9 @@
         letters {
             display-name = "Let";
             bindings = <
-&kp ESC           &kp Q   &kp W  &kp E     &kp R        &kp T             &kp Y        &kp U             &kp I          &kp O    &kp P      &ht DELETE LEFT_BRACKET
-&kp TAB           &kp A   &kp S  &kp D     &kp F        &kp G             &kp H        &kp J             &kp K          &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &kp Z   &kp X  &kp C     &kp V        &kp B             &kp N        &kp M             &kp COMMA      &kp DOT  &kp SLASH  &kp ENTER
+&kp ESC           &kp Q   &kp W  &ruen_key F E    &ruen_key P R        &ruen_key G T             &ruen_key J Y       &ruen_key L U         &ruen_key U I       &ruen_key Y O    &ruen_key SEMICOLON P      &ht DELETE LEFT_BRACKET
+&kp TAB           &kp A   &ruen_key R S  &ruen_key S D     &ruen_key T F        &ruen_key D G             &kp H        &ruen_key N J             &ruen_key E K          &ruen_key I L    &ruen_key O SEMICOLON  &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X  &kp C     &kp V        &kp B             &ruen_key K N        &kp M             &kp COMMA      &kp DOT  &kp SLASH  &kp ENTER
                                  &kp LGUI  &lt 1 ENTER  &kp LEFT_SHIFT    &lt 3 SPACE  &backspace_morph  &kp RALT
             >;
         };
@@ -116,7 +116,7 @@
             bindings = <
 &trans         &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_DISC 0  &trans  &trans    &trans  &none           &none            &none            &none                           &trans
 &trans         &trans          &trans        &trans         &trans  &trans    &trans  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans
-&ruen_macos 1  &ruen_switch 0 LG(N9)         &ruen_switch 1 LG(N8)        &trans         &trans  &trans    &trans  &trans          &trans           &trans           &trans                          &trans
+&ruen_macos 1  &ruen_switch 0 LG(N9)         &ruen_switch 1 LG(N8)        &trans         &trans  &trans    &trans  &trans          &trans           &trans           &trans  &trans
                                              &trans         &trans  &trans    &trans  &trans          &trans
             >;
         };
