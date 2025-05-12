@@ -76,19 +76,19 @@
         letters {
             display-name = "Let";
             bindings = <
-&kp ESC           &kp Q   &kp W  &ruen_key F E    &ruen_key P R        &ruen_key G T             &ruen_key J Y       &ruen_key L U         &ruen_key U I       &ruen_key Y O    &ruen_key SEMICOLON P      &ht DELETE LEFT_BRACKET
-&kp TAB           &kp A   &ruen_key R S           &ruen_key S D        &ruen_key T F             &ruen_key D G       &kp H                 &ruen_key N J       &ruen_key E K    &ruen_key I L       &ruen_key O SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &kp Z   &kp X  &kp C     &kp V        &kp B             &ruen_key K N        &kp M             &kp COMMA      &kp DOT  &kp SLASH  &kp ENTER
-                                 &kp LGUI  &lt 1 ENTER  &kp LEFT_SHIFT    &lt 3 SPACE  &backspace_morph  &kp RALT
+&kp ESC           &kp Q   &kp W                &ruen_key F E        &ruen_key P R       &ruen_key G T               &ruen_key J Y         &ruen_key L U       &ruen_key U I    &ruen_key Y O       &ruen_key SEMICOLON P      &ht DELETE LEFT_BRACKET
+&kp TAB           &kp A   &ruen_key R S        &ruen_key S D        &ruen_key T F       &ruen_key D G               &kp H                 &ruen_key N J       &ruen_key E K    &ruen_key I L       &ruen_key O SEMICOLON      &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X                &kp C                &kp V               &kp B                       &ruen_key K N         &kp M               &kp COMMA        &kp DOT             &kp SLASH                  &kp ENTER
+                  &kp LGUI                     &lt 1 ENTER                              &kp LEFT_SHIFT                                    &lt 3 SPACE                          &backspace_morph    &kp RALT
             >;
         };
 
         numbers {
             display-name = "Num";
             bindings = <
-&kp LC(LA(ENTER))            &ruen_key LS(N5) LS(N4)  &kp SLASH  &ruen_one_key 1 LS(N8)   &kp LC(LA(ENTER))  &kp LG(NUMBER_6)    &kp LG(SPACE)   &kp LS(N9)    &kp EQUAL        &kp LS(N0)       &kp LS(MINUS)        &kp PAGE_UP
+&kp LC(LA(ENTER))            &ruen_key LS(N5) LS(N4)             &kp SLASH                &ruen_one_key 1 LS(N8)   &kp LC(LA(ENTER))  &kp LG(NUMBER_6)    &kp LG(SPACE)   &kp LS(N9)    &kp EQUAL        &kp LS(N0)       &kp LS(MINUS)        &kp PAGE_UP
 &kp LC(LA(LG(LEFT_ARROW)))   &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3             &kp NUMBER_4       &kp NUMBER_5        &kp NUMBER_6    &kp N7        &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0         &kp PAGE_DOWN
-&kp LG(LC(LA(RIGHT_ARROW)))  &kp LC(LA(U))     &kp LC(LA(I))     &kp LA(LC(LEFT_ARROW))   &kp LC(LA(RIGHT_ARROW))    &ruen_switch 0 LG(N9)        &ruen_one_key 1 LS(COMMA)    &ruen_one_key 1 LS(PERIOD)   &kp COMMA    &kp PERIOD     &kp SLASH       &kp END
+&kp LG(LC(LA(RIGHT_ARROW)))  &kp LC(LA(U))     &kp LC(LA(I))     &kp LA(LC(LEFT_ARROW))   &kp LC(LA(RIGHT_ARROW))    &ruen_switch 0 LG(N9)       &kp MINUS     &kp LS(EQUAL)    &kp COMMA        &kp PERIOD     &kp SLASH       &kp END
                              &trans                   &trans             &trans                                                                                                    &trans          &trans                &trans
             >;
         };
@@ -105,9 +105,9 @@
         functions {
             display-name = "Fun";
             bindings = <
-&ht F1 C_BRI_DN  &ht F2 C_BRI_UP  &kp F3    &kp F4        &kp F5           &kp F6              &ht F7 C_PREV       &ht F8 C_PLAY_PAUSE  &ht F9 C_NEXT   &ht F10 C_MUTE        &ht F11 C_VOL_DN       &ht F12 C_VOL_UP
-&none        &kp LG(Z)      &kp LG(X)      &kp LG(C)      &kp LG(V)        &none               &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))   &kp LG(LS(N5))
-&bootloader  &bt BT_CLR_ALL &bt BT_SEL 0   &bt BT_DISC 0  &rgb_ug RGB_ON   &rgb_ug RGB_OFF     &none               &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp LG(RIGHT_BRACKET)  &bootloader
+&ht F1 C_BRI_DN  &ht F2 C_BRI_UP  &kp F3         &kp F4         &kp F5           &kp F6              &ht F7 C_PREV       &ht F8 C_PLAY_PAUSE  &ht F9 C_NEXT   &ht F10 C_MUTE        &ht F11 C_VOL_DN       &ht F12 C_VOL_UP
+&ruen_macos 1    &kp LG(Z)        &kp LG(X)      &kp LG(C)      &kp LG(V)        &ruen_macos 0       &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))   &kp LG(LS(N5))
+&bootloader      &bt BT_CLR_ALL   &bt BT_SEL 0   &bt BT_DISC 0  &rgb_ug RGB_ON   &rgb_ug RGB_OFF     &none               &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp LG(RIGHT_BRACKET)  &bootloader
                         &trans          &trans          &trans                                                                      &trans              &trans               &trans
             >;
         };
