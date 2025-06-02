@@ -103,7 +103,7 @@
             >;
         };
 
-        functions
+        functions {
             display-name = "Fun";
             bindings = <
 &ht F1 C_BRI_DN  &ht F2 C_BRI_UP  &kp F3         &kp F4         &kp F5           &kp F6              &ht F7 C_PREV       &ht F8 C_PLAY_PAUSE  &ht F9 C_NEXT   &ht F10 C_MUTE        &ht F11 C_VOL_DN       &ht F12 C_VOL_UP
