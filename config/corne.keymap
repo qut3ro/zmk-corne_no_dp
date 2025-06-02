@@ -51,9 +51,6 @@
             to_ru = <0x8070026>; // uint32_t code for your hotkey to switch to Russian (in this example: LG(N9))
         };
 
-         #if ZMK_BEHAVIOR_OMIT(LT)
-        /omit-if-no-ref/
-        #endif
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
