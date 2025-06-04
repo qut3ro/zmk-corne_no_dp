@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors/ruen.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -33,21 +27,169 @@
             quick-release;
             ignore-modifiers;
         };
+
+        bspc_morph: bspc_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_MORPH";
+            bindings = <&lt 2 BACKSPACE>, <&lt 2 LA(BACKSPACE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        q_morph: q_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Q_MORPH";
+            bindings = <&ruen_key Q W>, <&kp LG(Q)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        a_morph: a_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_MORPH";
+            bindings = <&ruen_key A B>, <&kp LG(A)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        z_morph: z_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Z_MORPH";
+            bindings = <&ruen_key Z A>, <&kp LG(Z)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        w_morph: w_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "W_MORPH";
+            bindings = <&ruen_key W M>, <&kp LG(W)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        s_morph: s_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_MORPH";
+            bindings = <&ruen_key S T>, <&kp LG(S)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        x_morph: x_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "X_MORPH";
+            bindings = <&ruen_key X SQT>, <&kp LG(X)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        c_morph: c_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "C_MORPH";
+            bindings = <&ruen_key C LEFT_BRACKET>, <&kp LG(C)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        r_morph: r_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R_MORPH";
+            bindings = <&ruen_key R Q>, <&kp LG(R)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        f_morph: f_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F_MORPH";
+            bindings = <&ruen_key F F>, <&kp LG(F)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        v_morph: v_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "V_MORPH";
+            bindings = <&ruen_key V S>, <&kp LG(V)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        b_morph: b_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_MORPH";
+            bindings = <&ruen_key B PERIOD>, <&kp LG(B)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+    };
+
+    conditional_layers { compatible = "zmk,conditional-layers"; };
+
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12 13>;
+            layers = <0 4>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17 18>;
+            layers = <0 4>;
+        };
+
+        tg4 {
+            bindings = <&tog 4>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        cmd {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <30 31>;
+            layers = <0 1>;
+        };
+
+        DPtoIE {
+            bindings = <&ruen_key F24 O>;
+            key-positions = <12 13>;
+            layers = <0>;
+        };
+
+        OAtoSHCH {
+            bindings = <&ruen_key F24 RBKT>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
     };
 
     macros {
         ruen_to_en: ruen_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <5>;
-            bindings = <&kp LS(N8)>;
+            bindings = <&kp LG(N8)>;
         };
 
         ruen_to_ru: ruen_to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <5>;
-            bindings = <&kp LS(N9)>;
+            bindings = <&kp LG(N9)>;
         };
     };
 
@@ -69,7 +211,7 @@
             bindings = <
 &kp LC(LA(ENTER))            &kp LC(LA(U))             &kp LC(LA(I))     &kp LA(LC(LEFT_ARROW))   &kp LC(LA(RIGHT_ARROW))    &kp LG(NUMBER_6)           &kp LG(SPACE)   &kp LS(N9)      &kp EQUAL               &kp LS(N0)                 &kp LS(MINUS)        &kp PAGE_UP
 &kp LC(LA(LG(LEFT_ARROW)))   &kp NUMBER_1              &kp NUMBER_2      &kp NUMBER_3             &kp NUMBER_4               &kp NUMBER_5               &kp NUMBER_6    &kp N7          &kp NUMBER_8            &kp NUMBER_9               &kp NUMBER_0         &kp PAGE_DOWN
-&kp LG(LC(LA(RIGHT_ARROW)))  &ruen_one_key 1 LS(N4)    &kp SLASH         &ruen_key LS(N5) LS(N4)  &ruen_one_key 1 LS(N8)     &ruen_switch 0 LG(N9)      &kp MINUS       &kp LS(EQUAL)   &ruen_key COMMA LS(N6)  &ruen_key PERIOD LS(N7)    &kp SLASH            &kp END
+&kp LG(LC(LA(RIGHT_ARROW)))  &ruen_one_key 1 LS(N4)    &kp SLASH         &ruen_key LS(N5) LS(N4)  &ruen_one_key 1 LS(N8)     &ruen_switch 0             &kp MINUS       &kp LS(EQUAL)   &ruen_key COMMA LS(N6)  &ruen_key PERIOD LS(N7)    &kp SLASH            &kp END
                              &trans                    &trans            &trans                                                                                                    &trans          &trans                &trans
             >;
         };
@@ -78,7 +220,7 @@
             bindings = <
 &trans    &none                   &ruen_one_key 1 LS(RIGHT_BRACKET)  &ruen_one_key 1 LS(N3)          &ruen_one_key 1 LS(LEFT_BRACKET)  &ruen_one_key 1 BACKSLASH    &ruen_one_key 1 GRAVE   &ruen_one_key 1 LS(COMMA)  &ruen_one_key 1 LS(BACKSLASH)  &ruen_one_key 1 LS(PERIOD)  &kp LS(MINUS)   &trans
 &trans    &ruen_one_key 1 LS(N7)  &kp LS(N1)                         &ruen_key LS(SEMICOLON) LS(N5)  &ruen_key LS(SQT) LS(N2)          &ruen_one_key 1 SQT          &ruen_one_key 1 LS(N2)  &sm LEFT_GUI               &sm LEFT_ALT                   &sm LEFT_SHIFT              &sm LCTRL       &trans
-&trans    &none                   &ruen_key RIGHT_BRACKET GRAVE      &ruen_key SEMICOLON LS(N8)      &ruen_key LEFT_BRACKET LS(GRAVE)  &ruen_key LS(GRAVE)          &ruen_switch 1 LG(N8)          &ruen_key COMMA LS(N6)     &ruen_key PERIOD LS(N7)        &ruen_one_key 1 LS(N6)      &kp LS(SLASH)   &trans
+&trans    &none                   &ruen_key RIGHT_BRACKET GRAVE      &ruen_key SEMICOLON LS(N8)      &ruen_key LEFT_BRACKET LS(GRAVE)  &ruen_key LS(GRAVE)          &ruen_switch 1          &ruen_key COMMA LS(N6)     &ruen_key PERIOD LS(N7)        &ruen_one_key 1 LS(N6)      &kp LS(SLASH)   &trans
                             &trans                   &trans                                     &kp DEL                           &kp LEFT_SHIFT               &kp SPACE               &trans
             >;
         };
