@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-ruen
       remote: jewtvet
-      revision: dev
+      revision: main
   self:
     path: config
