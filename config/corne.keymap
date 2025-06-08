@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    chosen { zmk,charmap = &charmap_us; };
+
     behaviors {
         ht: hold_tap {
             label = "hold_tap_letters";
@@ -135,6 +137,7 @@
         };
     };
 
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";
@@ -215,7 +218,7 @@
             bindings = <
 &none                   &ruen_one_key 1 LS(RIGHT_BRACKET)  &ruen_one_key 1 LS(N3)          &ruen_one_key 1 LS(LEFT_BRACKET)  &ruen_one_key 1 BACKSLASH  &ruen_one_key 1 GRAVE   &ruen_one_key 1 LS(COMMA)  &ruen_one_key 1 LS(BACKSLASH)  &ruen_one_key 1 LS(PERIOD)  &kp LS(MINUS)
 &ruen_one_key 1 LS(N7)  &kp LS(N1)                         &ruen_key LS(SEMICOLON) LS(N5)  &ruen_key LS(SQT) LS(N2)          &ruen_one_key 1 SQT        &ruen_one_key 1 LS(N2)  &sm LEFT_GUI               &sm LEFT_ALT                   &sm LEFT_SHIFT              &sm LCTRL
-&none                   &ruen_key RIGHT_BRACKET GRAVE      &ruen_key SEMICOLON LS(N8)      &ruen_key LEFT_BRACKET LS(GRAVE)  &ruen_one_key 1 LS(GRAVE)  &ruen_switch 1          &ruen_key PERIOD LS(N7)    &ruen_key COMMA LS(N6)         &ruen_one_key 1 LS(N6)      &kp LS(SLASH)
+&none                   &ruen_key RIGHT_BRACKET GRAVE      &ruen_key SEMICOLON LS(N8)      &ruen_key LEFT_BRACKET LS(GRAVE)  &none                      &ruen_switch 1          &ruen_key PERIOD LS(N7)    &ruen_key COMMA LS(N6)         &ruen_one_key 1 LS(N6)      &kp LS(SLASH)
                                                                                            &lt 3 DELETE                      &kp LEFT_SHIFT             &kp SPACE               &trans
             >;
         };
