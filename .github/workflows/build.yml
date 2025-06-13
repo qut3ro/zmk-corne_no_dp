@@ -1,28 +1,5 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    outputs:
-      path: ${{ steps.set-path.outputs.module_path }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Clone zmk-ruen module
-        run: |
-          git clone https://github.com/jewtvet/zmk-ruen /tmp/zmk-ruen
-          rm -f /tmp/zmk-ruen/zephyr/misc/empty_file.c
-
-      - name: Set module path
-        id: set-path
-        run: echo "module_path=/tmp/zmk-ruen" >> "$GITHUB_OUTPUT"
-
   build:
     uses: nxtkb/zmk/.github/workflows/build-user-config.yml@main
-    needs: prepare
-    with:
-      shield: "corne_left"
-      board: "nice_nano_v2"
-      zmk_config_path: "config"
-      extra_modules: ${{ needs.prepare.outputs.path }}
