@@ -15,7 +15,7 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
             global-quick-tap;
-            bindings = <&kp &kp>;
+            bindings = <&kp>, <&kp>;
         };
 
         sm: sticky_mod {
@@ -78,7 +78,7 @@
 
        letters {
             display-name = "Let";
-            bindings =
+            bindings = <
 &kp ESC           &kp Q   &kp W                &ruen_key F E        &ruen_key P R       &ruen_key G T               &ruen_key J Y         &ruen_key L U       &ruen_key U I    &ruen_key Y O       &ruen_key SEMICOLON P      &kp LEFT_BRACKET
 &kp TAB           &kp A   &ruen_key R S        &ruen_key S D        &ruen_key T F       &ruen_key D G               &kp H                 &ruen_key N J       &ruen_key E K    &ruen_key I L       &ruen_key O SEMICOLON      &kp SQT
 &kp LEFT_CONTROL  &kp Z   &kp X                &kp C                &kp V               &kp B                       &ruen_key K N         &kp M               &kp COMMA        &kp DOT             &kp SLASH                  &kp ENTER
@@ -98,7 +98,7 @@
 
         symbols {
             display-name = "Sym";
-            bindings = <<
+            bindings = <
 &trans    &none                   &ruen_one_key 1 LS(RIGHT_BRACKET)  &ruen_one_key 1 LS(N3)          &ruen_one_key 1 LS(LEFT_BRACKET)  &ruen_one_key 1 BACKSLASH    &ruen_one_key 1 GRAVE   &ruen_one_key 1 LS(COMMA)  &ruen_one_key 1 LS(BACKSLASH)  &ruen_one_key 1 LS(PERIOD)  &kp LS(MINUS)   &trans
 &trans    &ruen_one_key 1 LS(N7)  &kp LS(N1)                         &ruen_key LS(SEMICOLON) LS(N5)  &ruen_key LS(SQT) LS(N2)          &ruen_one_key 1 SQT          &ruen_one_key 1 LS(N2)  &sm LEFT_GUI               &sm LEFT_ALT                   &sm LEFT_SHIFT              &sm LCTRL       &trans
 &trans    &none                   &ruen_key RIGHT_BRACKET GRAVE      &ruen_key SEMICOLON LS(N8)      &ruen_key LEFT_BRACKET LS(GRAVE)  &ruen_key LS(GRAVE)          &ruen_switch 1          &ruen_key COMMA LS(N6)     &ruen_key PERIOD LS(N7)        &ruen_one_key 1 LS(N6)      &kp LS(SLASH)   &trans
@@ -108,6 +108,7 @@
 
         functions {
             display-name = "Fun";
+            bindings = <
 &ht F1 C_BRI_DN  &ht F2 C_BRI_UP  &kp F3         &kp F4         &kp F5           &kp F6              &ht F7 C_PREV       &ht F8 C_PLAY_PAUSE  &ht F9 C_NEXT   &ht F10 C_MUTE        &ht F11 C_VOL_DN       &ht F12 C_VOL_UP
 &ruen_macos 1    &kp LG(Z)        &kp LG(X)      &kp LG(C)      &kp LG(V)        &ruen_macos 0       &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))   &kp LG(LS(N5))
 &bootloader      &bt BT_CLR_ALL   &bt BT_SEL 0   &bt BT_DISC 0  &none            &none               &none               &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp LG(RIGHT_BRACKET)  &bootloader
