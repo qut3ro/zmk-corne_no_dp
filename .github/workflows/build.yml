@@ -1,5 +1,15 @@
-on: [push, pull_request, workflow_dispatch]
+# .github/workflows/build.yml
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
     uses: nxtkb/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      board: nice_nano_v2
+      config_path: config
+      zmk_repo_path: zmk
+      shields: corne_left,corne_right,settings_reset
