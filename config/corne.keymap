@@ -69,7 +69,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        default-layer = <&base>;
+        default-layer = <&letters>;
         letters {
             display-name = "Let";
             bindings = <
