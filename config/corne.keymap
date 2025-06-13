@@ -36,105 +36,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-
-        q_morph: q_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "Q_MORPH";
-            bindings = <&ruen_key Q W>, <&kp LG(Q)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        a_morph: a_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_MORPH";
-            bindings = <&ruen_key A B>, <&kp LG(A)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        z_morph: z_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "Z_MORPH";
-            bindings = <&ruen_key Z A>, <&kp LG(Z)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        w_morph: w_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "W_MORPH";
-            bindings = <&ruen_key W M>, <&kp LG(W)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        s_morph: s_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "S_MORPH";
-            bindings = <&ruen_key S T>, <&kp LG(S)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        x_morph: x_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "X_MORPH";
-            bindings = <&ruen_key X SQT>, <&kp LG(X)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        c_morph: c_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "C_MORPH";
-            bindings = <&ruen_key C LEFT_BRACKET>, <&kp LG(C)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        r_morph: r_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "R_MORPH";
-            bindings = <&ruen_key R Q>, <&kp LG(R)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        f_morph: f_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "F_MORPH";
-            bindings = <&ruen_key F F>, <&kp LG(F)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        v_morph: v_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "V_MORPH";
-            bindings = <&ruen_key V S>, <&kp LG(V)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        b_morph: b_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "B_MORPH";
-            bindings = <&ruen_key B PERIOD>, <&kp LG(B)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -144,38 +45,17 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12 13>;
-            layers = <0 4>;
+            key-positions = <15 16 14>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17 18>;
-            layers = <0 4>;
+            key-positions = <19 20 21>;
         };
 
-        tg4 {
-            bindings = <&tog 4>;
-            key-positions = <31 32>;
-            layers = <0>;
-        };
-
-        cmd {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <30 31>;
-            layers = <0 1>;
-        };
-
-        DPtoIE {
-            bindings = <&ruen_key F24 O>;
-            key-positions = <12 13>;
-            layers = <0>;
-        };
-
-        OAtoSHCH {
-            bindings = <&ruen_key F24 RBKT>;
-            key-positions = <2 3>;
-            layers = <0>;
+        comboL4 {
+            bindings = <&mo 4>;
+            key-positions = <38 39>;
         };
     };
 
@@ -205,7 +85,7 @@
             >;
         };
 
-        Num {
+         Num {
             bindings = <
 &kp LC(LA(ENTER))            &kp LC(LA(U))             &kp LC(LA(I))     &kp LA(LC(LEFT_ARROW))   &kp LC(LA(RIGHT_ARROW))    &kp LG(NUMBER_6)           &kp LA(SPACE)   &kp LS(N9)      &kp EQUAL               &kp LS(N0)                 &kp LS(MINUS)        &kp PAGE_UP
 &kp LC(LA(LG(LEFT_ARROW)))   &kp NUMBER_1              &kp NUMBER_2      &kp NUMBER_3             &kp NUMBER_4               &kp NUMBER_5               &kp NUMBER_6    &kp N7          &kp NUMBER_8            &kp NUMBER_9               &kp NUMBER_0         &kp PAGE_DOWN
