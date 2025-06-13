@@ -32,108 +32,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_MORPH";
             bindings = <&lt 2 BACKSPACE>, <&lt 2 LA(BACKSPACE)>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-        };
-
-        q_morph: q_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "Q_MORPH";
-            bindings = <&ruen_key Q W>, <&kp LG(Q)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        a_morph: a_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_MORPH";
-            bindings = <&ruen_key A B>, <&kp LG(A)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        z_morph: z_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "Z_MORPH";
-            bindings = <&ruen_key Z A>, <&kp LG(Z)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        w_morph: w_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "W_MORPH";
-            bindings = <&ruen_key W M>, <&kp LG(W)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        s_morph: s_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "S_MORPH";
-            bindings = <&ruen_key S T>, <&kp LG(S)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        x_morph: x_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "X_MORPH";
-            bindings = <&ruen_key X SQT>, <&kp LG(X)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        c_morph: c_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "C_MORPH";
-            bindings = <&ruen_key C LEFT_BRACKET>, <&kp LG(C)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        r_morph: r_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "R_MORPH";
-            bindings = <&ruen_key R Q>, <&kp LG(R)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        f_morph: f_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "F_MORPH";
-            bindings = <&ruen_key F F>, <&kp LG(F)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        v_morph: v_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "V_MORPH";
-            bindings = <&ruen_key V S>, <&kp LG(V)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        b_morph: b_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "B_MORPH";
-            bindings = <&ruen_key B PERIOD>, <&kp LG(B)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
         };
     };
 
@@ -180,7 +80,7 @@
 &kp ESC           &kp Q   &kp W                &ruen_key F E        &ruen_key P R       &ruen_key G T               &ruen_key J Y         &ruen_key L U       &ruen_key U I    &ruen_key Y O       &ruen_key SEMICOLON P      &ht DELETE LEFT_BRACKET
 &kp TAB           &kp A   &ruen_key R S        &ruen_key S D        &ruen_key T F       &ruen_key D G               &kp H                 &ruen_key N J       &ruen_key E K    &ruen_key I L       &ruen_key O SEMICOLON      &kp SQT
 &kp LEFT_CONTROL  &kp Z   &kp X                &kp C                &kp V               &kp B                       &ruen_key K N         &kp M               &kp COMMA        &kp DOT             &kp SLASH                  &kp ENTER
-                  &kp LGUI                     &lt 1 ENTER                              &kp LEFT_SHIFT                                    &lt 3 SPACE                          &backspace_morph    &kp RALT
+                  &kp LGUI                     &lt 1 ENTER                              &kp LEFT_SHIFT                                    &lt 3 SPACE                          &bspc_morph    &kp RALT
              >;
         };
 
