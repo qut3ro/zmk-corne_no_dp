@@ -68,10 +68,10 @@
             bindings = <&kp LG(N9)>;
         };
     };
-};
 
     keymap {
         compatible = "zmk,keymap";
+
         letters {
             display-name = "Let";
             bindings = <
