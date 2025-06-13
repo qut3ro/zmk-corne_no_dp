@@ -4,8 +4,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    chosen { zmk,charmap = &charmap_us; };
-
     behaviors {
         ht: hold_tap {
             label = "hold_tap_letters";
@@ -28,7 +26,7 @@
             ignore-modifiers;
         };
 
-        bspc_morph: bspc_morph {
+        backspace_morph: backspace_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_MORPH";
             bindings = <&lt 2 BACKSPACE>, <&lt 2 LA(BACKSPACE)>;
@@ -36,7 +34,23 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-    };
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 16 14>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20 21>;
+        };
+
+        comboL4 {
+            bindings = <&mo 4>;
+            key-positions = <38 39>;
+        };
 
     macros {
         ruen_to_en: ruen_to_en {
