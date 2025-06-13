@@ -1,16 +1,11 @@
 manifest:
   remotes:
-    - name: zmk
-      url-base: https://github.com/nxtkb
-    - name: jewtvet
-      url-base: https://github.com/jewtvet
+    - name: zmkfirmware
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: zmk
-      revision: main
+      remote: zmkfirmware
+      revision: feat/pointers-move-scroll
       import: app/west.yml
-    - name: zmk-ruen
-      remote: jewtvet
-      revision: main
   self:
     path: config
