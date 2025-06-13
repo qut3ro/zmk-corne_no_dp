@@ -144,14 +144,17 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12 13>;
-            layers = <0 4>;
+            key-positions = <15 16 14>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17 18>;
-            layers = <0 4>;
+            key-positions = <19 20 21>;
+        };
+
+        comboL4 {
+            bindings = <&mo 4>;
+            key-positions = <38 39>;
         };
 
         tg4 {
@@ -234,10 +237,10 @@
 
         Nav {
             bindings = <
-&none          &none              &kp LG(GRAVE)                   &kp LG(TAB)              &kp PAGE_UP              &ht LG(RIGHT_BRACKET) LG(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &kp UP         &none                                      &none
-&kp LG(Z)      &kp LG(X)          &kp LG(C)                       &kp LG(V)                &kp PAGE_DOWN            &kp LC(TAB)                             &kp LEFT               &kp DOWN       &kp RIGHT                                  &none
-&kp LC(LG(F))  &kp LC(LA(ENTER))  &ht LA(LC(RIGHT)) LC(LA(LEFT))  &ht LC(LA(J)) LC(LA(U))  &ht LC(LA(K)) LC(LA(I))  &none                                   &kp LC(LEFT)           &kp LC(RIGHT)  &ht LG(LA(NUMBER_3)) LG(LA(LC(NUMBER_3)))  &ht LG(LA(NUMBER_4)) LG(LA(LC(NUMBER_4)))
-                                                                  &tog 4                   &kp LEFT_SHIFT           &kp LEFT_GUI                            &kp LEFT_ALT
+&ht F1 C_BRI_DN  &ht F2 C_BRI_UP  &kp F3         &kp F4         &kp F5           &kp F6              &ht F7 C_PREV       &ht F8 C_PLAY_PAUSE  &ht F9 C_NEXT   &ht F10 C_MUTE        &ht F11 C_VOL_DN       &ht F12 C_VOL_UP
+&ruen_macos 1    &kp LG(Z)        &kp LG(X)      &kp LG(C)      &kp LG(V)        &ruen_macos 0       &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))   &kp LG(LS(N5))
+&bootloader      &bt BT_CLR_ALL   &bt BT_SEL 0   &bt BT_DISC 0  &none            &none               &none               &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp LG(RIGHT_BRACKET)  &bootloader
+                        &trans          &trans          &trans                                                                      &trans              &trans               &trans
             >;
         };
     };
