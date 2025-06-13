@@ -6,7 +6,7 @@
 / {
     behaviors {
         ht: hold_tap {
-            label = "hold_tap_letters";
+            label = "HOLD_TAP_LETTERS";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -26,14 +26,14 @@
             ignore-modifiers;
         };
 
-        backspace_morph: backspace_morph {
+        bs_morph: backspace_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_MORPH";
-            bindings = <&lt 2 BACKSPACE>, <&lt 2 LA(BACKSPACE)>;
-
             #binding-cells = <0>;
+            bindings = <&lt 2 BACKSPACE>, <&lt 2 LS(BACKSPACE)>; // проверь LS()
             mods = <(MOD_LSFT)>;
         };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -52,6 +52,7 @@
             bindings = <&mo 4>;
             key-positions = <38 39>;
         };
+    };
 
     macros {
         ruen_to_en: ruen_to_en {
@@ -66,6 +67,7 @@
             bindings = <&kp LG(N9)>;
         };
     };
+};
 
     keymap {
         compatible = "zmk,keymap";
