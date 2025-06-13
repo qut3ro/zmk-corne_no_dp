@@ -34,6 +34,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
     combos {
         compatible = "zmk,combos";
 
@@ -82,7 +83,7 @@
         numbers {
             display-name = "Num";
             bindings = <
-&kp LC(LA(ENTER))            &kp LC(LA(U))             &kp LC(LA(I))     &kp LA(LC(LEFT_ARROW))   &kp LC(LA(RIGHT_ARROW))    &kp LG(NUMBER_6)           &kp LG(SPACE)   &kp LS(N9)      &kp EQUAL               &kp LS(N0)                 &kp LS(MINUS)        &kp PAGE_UP
+&kp LC(LA(ENTER))            &kp LC(LA(U))             &kp LC(LA(I))     &kp LA(LC(LEFT_ARROW))   &kp LC(LA(RIGHT_ARROW))    &kp LG(NUMBER_6)           &kp LA(SPACE)   &kp LS(N9)      &kp EQUAL               &kp LS(N0)                 &kp LS(MINUS)        &kp PAGE_UP
 &kp LC(LA(LG(LEFT_ARROW)))   &kp NUMBER_1              &kp NUMBER_2      &kp NUMBER_3             &kp NUMBER_4               &kp NUMBER_5               &kp NUMBER_6    &kp N7          &kp NUMBER_8            &kp NUMBER_9               &kp NUMBER_0         &kp PAGE_DOWN
 &kp LG(LC(LA(RIGHT_ARROW)))  &ruen_one_key 1 LS(N4)    &kp SLASH         &ruen_key LS(N5) LS(N4)  &ruen_one_key 1 LS(N8)     &ruen_switch 0             &kp MINUS       &kp LS(EQUAL)   &ruen_key COMMA LS(N6)  &ruen_key PERIOD LS(N7)    &kp SLASH            &kp END
                              &trans                    &trans            &trans                                                                                                    &trans          &trans                &trans
