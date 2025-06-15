@@ -125,7 +125,7 @@
 
         nav {
             bindings = <
-&kp LC(LG(F))          &kp LC(LA(ENTER))  &ht LA(LC(LEFT)) LC(LA(RIGHT))  &ht LA(LC(J)) LC(LA(U))  &ht LA(LC(I)) LA(LC(K))  &kp LG(GRAVE)    &kp LG(TAB)  &kp LG(RIGHT_BRACKET)  &kp UP         &none      &none  &none
+&kp LC(LG(F))          &kp LC(LA(ENTER))  &ht LA(LC(LEFT)) LC(LA(RIGHT))  &ht LA(LC(J)) LC(LA(U))  &ht LA(LC(K)) LA(LC(I))  &kp LG(GRAVE)    &kp LG(TAB)  &kp LG(RIGHT_BRACKET)  &kp UP         &none      &none  &none
 &kp LA(LC(LG(LEFT)))   &kp LG(Z)          &kp LG(X)                       &kp LG(C)                &kp LG(V)                &none            &kp LC(TAB)  &kp LEFT               &kp DOWN       &kp RIGHT  &none  &none
 &kp LC(LG(LA(RIGHT)))  &none              &none                           &none                    &kp LC(DOWN)             &kp LC(UP)       &none        &kp LC(LEFT)           &kp LC(RIGHT)  &none      &none  &none
                                                                           &trans                   &trans                   &trans           &kp SPACE       &trans                 &trans
