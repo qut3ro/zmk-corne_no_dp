@@ -60,11 +60,6 @@
             bindings = <&mo 4>;
             key-positions = <38 39>;
         };
-
-        comboL5 {
-            bindings = <&mo 4>;
-            key-positions = <38 39>;
-        };
     };
 
     macros {
@@ -97,29 +92,29 @@
         numbers {
             display-name = "Num";
             bindings = <
-&trans  &none         &ruen_key LS(N5) LS(N4)  &kp SLASH     &ruen_one_key 1 LS(N8)  &kp LG(NUMBER_6)          &kp LA(SPACE)  &kp LS(N9)    &kp EQUAL               &kp LS(N0)               &kp LS(MINUS)  &kp PAGE_UP
-&trans  &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3  &kp NUMBER_4            &kp NUMBER_5              &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8            &kp NUMBER_9             &kp NUMBER_0   &kp PAGE_DOWN
-&trans  &none         &ruen_one_key 1 LS(N4)   &kp MINUS     &kp LS(EQUAL)           &ruen_switch 0            &none          &none         &ruen_key COMMA LS(N6)  &ruen_key PERIOD LS(N7)  &kp SLASH      &kp END
-        &trans        &trans                   &trans                                                                                       &trans                  &trans                   &trans
+&trans  &none         &ruen_key LS(N5) LS(N4)  &kp SLASH     &ruen_one_key 1 LS(N8)  &kp LG(NUMBER_6)    &kp LA(SPACE)  &kp LS(N9)    &kp EQUAL               &kp LS(N0)               &kp LS(MINUS)  &kp PAGE_UP
+&trans  &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3  &kp NUMBER_4            &kp NUMBER_5        &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8            &kp NUMBER_9             &kp NUMBER_0   &kp PAGE_DOWN
+&trans  &none         &ruen_one_key 1 LS(N4)   &kp MINUS     &kp LS(EQUAL)           &ruen_switch 0      &none          &none         &ruen_key COMMA LS(N6)  &ruen_key PERIOD LS(N7)  &kp SLASH      &kp END
+                                               &trans        &trans                  &trans              &trans         &trans        &trans
             >;
         };
 
         symbols {
             bindings = <
-&trans  &none                   &ruen_one_key 1 LS(RIGHT_BRACKET)  &ruen_one_key 1 LS(N3)          &ruen_one_key 1 LS(LEFT_BRACKET)  &ruen_one_key 1 BACKSLASH          &ruen_one_key 1 GRAVE   &ruen_one_key 1 LS(COMMA)  &ruen_one_key 1 LS(BACKSLASH)  &ruen_one_key 1 LS(PERIOD)  &kp LS(MINUS)   &trans
-&trans  &ruen_one_key 1 LS(N7)  &kp LS(N1)                         &ruen_key LS(SEMICOLON) LS(N5)  &ruen_key LS(SQT) LS(N2)          &ruen_one_key 1 SQT                &ruen_one_key 1 LS(N2)  &sm LEFT_GUI               &sm LEFT_ALT                   &sm LEFT_SHIFT              &sm LCTRL       &trans
-&trans  &none                   &ruen_key RIGHT_BRACKET GRAVE      &ruen_key SEMICOLON LS(N8)      &ruen_key LEFT_BRACKET LS(GRAVE)  &ruen_one_key 1 LS(GRAVE)          &ruen_switch 1          &ruen_key COMMA LS(N6)     &ruen_key PERIOD LS(N7)        &ruen_one_key 1 LS(N6)      &kp LS(SLASH)   &trans
-        &trans                  &trans                             &kp DEL                                                                                                                                                 &kp LEFT_SHIFT                 &kp SPACE                   &trans
+&trans  &none                   &ruen_one_key 1 LS(RIGHT_BRACKET)  &ruen_one_key 1 LS(N3)          &ruen_one_key 1 LS(LEFT_BRACKET)  &ruen_one_key 1 BACKSLASH    &ruen_one_key 1 GRAVE   &ruen_one_key 1 LS(COMMA)  &ruen_one_key 1 LS(BACKSLASH)  &ruen_one_key 1 LS(PERIOD)  &kp LS(MINUS)  &trans
+&trans  &ruen_one_key 1 LS(N7)  &kp LS(N1)                         &ruen_key LS(SEMICOLON) LS(N5)  &ruen_key LS(SQT) LS(N2)          &ruen_one_key 1 SQT          &ruen_one_key 1 LS(N2)  &sm LEFT_GUI               &sm LEFT_ALT                   &sm LEFT_SHIFT              &sm LCTRL      &trans
+&trans  &none                   &ruen_key RIGHT_BRACKET GRAVE      &ruen_key SEMICOLON LS(N8)      &ruen_key LEFT_BRACKET LS(GRAVE)  &ruen_one_key 1 LS(GRAVE)    &ruen_switch 1          &ruen_key COMMA LS(N6)     &ruen_key PERIOD LS(N7)        &ruen_one_key 1 LS(N6)      &kp LS(SLASH)  &trans
+                                                                   &trans                          &trans                            &kp DEL                      &kp LEFT_SHIFT          &kp SPACE                  &trans
             >;
         };
 
         functions {
             display-name = "Fun";
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV    &kp C_NEXT     &none           &none          &kp C_PREV  &kp C_PP         &kp C_NEXT     &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP
-&kp F1        &kp F2        &kp F3        &kp F4         &kp F5          &kp F6         &kp F7      &kp F8           &kp F9         &kp F10       &kp F11       &kp F12
-&bootloader   &bt BT_CLR    &bt BT_SEL 1  &ruen_macos 1  &rgb_ug RGB_ON  &none          &none       &rgb_ug RGB_OFF  &ruen_macos 0  &bt BT_SEL 0  &bt BT_CLR    &bootloader
-              &trans        &trans        &trans                                                                     &trans         &trans        &trans
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV    &kp C_NEXT     &none           &none     &kp C_PREV  &kp C_PP         &kp C_NEXT     &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP
+&kp F1        &kp F2        &kp F3        &kp F4         &kp F5          &kp F6    &kp F7      &kp F8           &kp F9         &kp F10       &kp F11       &kp F12
+&bootloader   &bt BT_CLR    &bt BT_SEL 1  &ruen_macos 1  &rgb_ug RGB_ON  &none     &none       &rgb_ug RGB_OFF  &ruen_macos 0  &bt BT_SEL 0  &bt BT_CLR    &bootloader
+                                          &trans         &trans          &trans    &trans      &trans           &trans
             >;
         };
 
@@ -128,7 +123,7 @@
 &kp LC(LG(F))          &kp LC(LA(ENTER))  &ht LA(LC(LEFT)) LC(LA(RIGHT))  &ht LA(LC(J)) LC(LA(U))  &ht LA(LC(K)) LA(LC(I))  &kp LG(GRAVE)    &kp LG(TAB)  &kp LG(RIGHT_BRACKET)  &kp UP         &none      &none  &none
 &kp LA(LC(LG(LEFT)))   &kp LG(Z)          &kp LG(X)                       &kp LG(C)                &kp LG(V)                &none            &kp LC(TAB)  &kp LEFT               &kp DOWN       &kp RIGHT  &none  &none
 &kp LC(LG(LA(RIGHT)))  &none              &none                           &none                    &kp LC(DOWN)             &kp LC(UP)       &none        &kp LC(LEFT)           &kp LC(RIGHT)  &none      &none  &none
-                                                                          &trans                   &trans                   &trans           &kp SPACE       &trans                 &trans
+                                                                          &trans                   &trans                   &trans           &kp SPACE    &trans                 &trans
             >;
         };
     };
