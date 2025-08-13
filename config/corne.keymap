@@ -30,7 +30,7 @@
         bspc_morph: bspc_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "BSPC_MORPH";
-            bindings = <&lt 3 BACKSPACE>, <&lt 3 LA(BACKSPACE)>;
+            bindings = <&lt 2 BACKSPACE>, <&lt 2 LA(BACKSPACE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
