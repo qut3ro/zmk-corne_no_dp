@@ -88,7 +88,7 @@
             bindings = <
 &kp ESC           &kp Q  &kp W          &ruen_key F E  &ruen_key P R  &ruen_key G T     &ruen_key J Y  &ruen_key L U  &ruen_key U I  &ruen_key Y O  &ruen_key SEMICOLON P  &kp LEFT_BRACKET
 &kp TAB           &kp A  &ruen_key R S  &ruen_key S D  &ruen_key T F  &ruen_key D G     &kp H          &ruen_key N J  &ruen_key E K  &ruen_key I L  &ruen_key O SEMICOLON  &kp SQT
-&kp GLOBE         &kp Z  &kp X          &kp C          &kp V          &kp B             &ruen_key K N  &kp M          &kp COMMA      &kp DOT        &kp SLASH              &kp ENTER
+&kp CAPS          &kp Z  &kp X          &kp C          &kp V          &kp B             &ruen_key K N  &kp M          &kp COMMA      &kp DOT        &kp SLASH              &kp ENTER
                                         &kp LGUI       &lt 1 ENTER    &kp LEFT_SHIFT    &lt 3 SPACE    &bspc_morph    &kp DELETE
             >;
         };
