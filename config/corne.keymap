@@ -47,7 +47,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <19 38 39>;
+            key-positions = <38 39 31 32 33>;
         };
 
         comboL4 {
