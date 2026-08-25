@@ -114,12 +114,12 @@
 
             bindings =
                 <&kp LS(LG(F11))>,
-                <&macro_wait_time 500>,
-                <&macro_wait_time 3000>,
+                <&macro_wait_time 1000>,
+                <&bt BT_NXT>,
+                <&macro_wait_time 1500>,
                 <&kp LS(LG(F12))>;
         };
     };
-
     keymap {
         compatible = "zmk,keymap";
 
