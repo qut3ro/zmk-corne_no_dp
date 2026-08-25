@@ -111,11 +111,11 @@
         switch_mac: switch_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &bt BT_NXT,
-                &macro_wait_time 1500,
-                &kp LC(LO(LG(M)))
-            >;
+
+            bindings =
+                <&bt BT_NXT>,
+                <&macro_wait_time 1500>,
+                <&kp LA(LC(LG(F12)))>;
         };
     };
     keymap {
