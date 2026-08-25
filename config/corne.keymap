@@ -113,9 +113,10 @@
             #binding-cells = <0>;
 
             bindings =
-                &kp LS(LG(F11))
-                &macro_wait_time 1000
-                &kp LS(LG(F12))
+                <&kp LS(LG(F11))>,
+                <&macro_wait_time 500>,
+                <&macro_wait_time 3000>,
+                <&kp LS(LG(F12))>;
         };
     };
 
