@@ -114,7 +114,9 @@
             bindings =
                 <&bt BT_NXT>,
                 <&macro_wait_time 1500>,
-                <&kp LA(LC(LG(F12))) &kp LA(LC(LG(F11)))>;
+                &kp LA(LC(LG(F11)))>,
+                <&macro_wait_time 250>,
+                <&kp LA(LC(LG(F12)));
         };
     };
 
