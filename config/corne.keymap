@@ -164,10 +164,10 @@
 
         nav {
             bindings = <
-&kp LC(LG(F))         &kp LC(LA(ENTER))  &ht LA(LC(LEFT)) LC(LA(RIGHT))  &ht LA(LC(J)) LC(LA(U))  &ht LA(LC(K)) LA(LC(I))  &kp LG(GRAVE)    &kp LG(TAB)  &kp LG(RIGHT_BRACKET)  &kp UP         &none      &none  &none
-&kp LA(LC(LG(LEFT)))  &kp LG(Z)          &kp LG(X)                       &kp LG(C)                &kp LG(V)                &kp LC(UP)       &kp LC(TAB)  &kp LEFT               &kp DOWN       &kp RIGHT  &none  &none
-&kp LA(LC(C))         &none              &none                           &kp LA(LG(LEFT))         &kp LA(LG(RIGHT))        &none            &none        &kp LC(LEFT)           &kp LC(RIGHT)  &none      &none  &none
-                                                                         &kp ENTER                &kp BACKSPACE            &trans           &trans       &kp SPACE              &bspc_morph
+&ht LS(LA(G)) LS(LA(S))  &kp LS(LA(M))  &ht LC(LA(L)) LC(LA(H))  &ht LS(LA(X)) LA(LS(Y))  &kp LS(LA(T))      &kp LG(GRAVE)    &kp LG(TAB)  &kp LG(RIGHT_BRACKET)  &kp UP         &none      &none  &none
+&none                    &none          &none                    &kp LA(LS(P))            &kp LS(LA(N))      &kp LC(UP)       &kp LC(TAB)  &kp LEFT               &kp DOWN       &kp RIGHT  &none  &none
+&kp LC(LA(Q))            &none          &none                    &kp LA(LG(LEFT))         &kp LA(LG(RIGHT))  &none            &none        &kp LC(LEFT)           &kp LC(RIGHT)  &none      &none  &kp LC(LA(S))
+                                                                 &kp ENTER                &kp BACKSPACE      &trans           &trans       &kp SPACE              &bspc_morph
             >;
         };
     };
